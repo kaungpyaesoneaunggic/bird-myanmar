@@ -1,7 +1,7 @@
 import React from "react";
 import useFetch from "../useFetch";
 import BirdCard from "../components/BirdCard";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Masonry,{  ResponsiveMasonry } from "react-responsive-masonry";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
