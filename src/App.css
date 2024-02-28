@@ -1,25 +1,58 @@
 .App {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  text-align: center; 
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 .content{
   flex-grow: 1;
+  width: 100vw;
+}
+
+.glassEffect{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.bgApply{
+  background-color: #282c34;
+}
+
+.tlbrRounded{
+  border-radius: 40px 0px 40px 0px !important;
+}
+.trblRounded{
+  border-radius: 0px 40px 0px 40px !important;
+}
+.allRounded{
+  border-radius: 2vw 2vw 2vw 2vw !important;
+}
+
+.birdImage {
+  width: 400px; /* Make sure the birdImage takes up the full width */
+}
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .birdImage {
+    width: 50%; /* Adjust the width as needed for smaller screens */
+  }
+}
+
+/* Media query for screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .birdImage {
+    width: 70%; /* Adjust the width as needed for medium screens */
+  }
+}
+
+/* Media query for screens larger than 992px */
+@media (min-width: 992px) {
+  .birdImage {
+    width: 80%; /* Adjust the width as needed for larger screens */
+  }
 }
