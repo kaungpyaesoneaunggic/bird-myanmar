@@ -17,7 +17,7 @@ export default function HomePage() {
   return (
     <div
       style={{ height: "100vh" }}
-      className="col-lg-12 justify-content-center align-items-center bgApply"
+      className="col-lg-12 justify-content-center align-items-center bgApply p-3"
     >
       <div className="row">
         <div data-aos="fade-up" className="col-md-7 px-3 order-md-1 order-2">
@@ -55,7 +55,7 @@ export default function HomePage() {
               />
             </div>
             <div
-              className="card col-md-11 moving-text-container mb-3 ms-4 bg-secondary  allRounded"
+              className="card col-md-11 moving-text-container mb-3 bg-secondary  allRounded"
               data-aos="zoom-in"
             >
               <p className=" pt-2 text-light">

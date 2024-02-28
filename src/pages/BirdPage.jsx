@@ -12,6 +12,7 @@ export default function BirdPage() {
     data: birds,
   } = useFetch("https://bird-json-server-six.vercel.app/Tbl_Bird");
   AOS.init({
+    delay: 100,
     duration: 600,
     easing: "ease", // default easing for AOS animations
     once: false,
