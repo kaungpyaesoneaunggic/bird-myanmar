@@ -4,19 +4,27 @@ import SmallCard from "../components/SmallCard";
 import wikiLogo from "../img/wikiLogo.png";
 import facebook from "../img/facebook-svg.svg";
 import arrowEast from "../img/arroweast.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
 export default function HomePage() {
+  AOS.init({
+    duration: 600,
+    easing: "ease", // default easing for AOS animations
+    once: false,
+  });
   return (
     <div
       style={{ height: "100vh" }}
       className="col-lg-12 justify-content-center align-items-center bgApply"
     >
       <div className="row">
-        <div className="col-md-7 px-3 order-md-1 order-2">
+        <div data-aos="fade-up" className="col-md-7 px-3 order-md-1 order-2">
           <BigCard />
           <Link
             to="/birds"
+            data-aos="fade-up"
             className="column col-md-12 card bg-secondary mt-3 text-decoration-none text-white"
             style={{ height: "18vh" }}
           >
@@ -34,7 +42,7 @@ export default function HomePage() {
         </div>
         <div className="col-md-5 px-3 order-md-2 order-1">
           <div className="row">
-            <div className="d-flex flex-row">
+            <div className="d-flex flex-row" data-aos="fade-up">
               <SmallCard
                 Icon={wikiLogo}
                 Text={"WikiPedia MMBird"}
@@ -61,7 +69,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-center" data-aos="zoom-in">
         <div className="d-flex flex-row col-md-11 card bg-secondary">
           <div className="col-md-3 card-container shadow m-2">
             <p className="h3 text-white m-1 ">၈၆၀၀</p>
