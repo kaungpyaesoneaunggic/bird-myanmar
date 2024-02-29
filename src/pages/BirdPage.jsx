@@ -19,8 +19,8 @@ export default function BirdPage() {
   });
   return (
     <div style={{ minHeight:'100vh' }} className="container-fluid bgApply d-flex flex-wrap justify-content-center">
-      <ResponsiveMasonry>
-        <Masonry className="" style={{ width: "90vw" }}>
+      <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 4}}>
+        <Masonry columnsCount={4} className="" style={{ width: "90vw" }}>
           {error && <div>{error}</div>}
           {isPending && <div className="text-white h1 text-center">Loading...</div>}
           {birds &&
