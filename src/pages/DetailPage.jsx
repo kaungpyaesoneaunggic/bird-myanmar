@@ -34,14 +34,13 @@ export default function DetailPage() {
   function confirmDelete() {
     var result = window.confirm("Are you sure you want to delete?");
     if (result) {
-      console.log('chose yes')
     } else {
       return;
     }
   }
 
   return (
-    <div className="bgApply" style={{ minHeight: "71vh" }}>
+    <div className="bgApply" style={{ minHeight: "80vh" }}>
       <div className="container my-4 pt-5">
         {isPending && <div className="h1 text-white">Loading...</div>}
         {error && <div className="h1 text-white">{error} </div>}

@@ -16,10 +16,10 @@ export default function HomePage() {
   });
   return (
     <div
-      style={{ height: "100vh" }}
-      className="col-lg-12 justify-content-center align-items-center bgApply p-3"
+      style={{ minHeight: "100vh", marginBottom:'8vh' }}
+      className="col-lg-12 justify-content-center align-items-center bgApply pt-3 px-3"
     >
-      <div className="row">
+      <div className="row mb-3">
         <div data-aos="fade-up" className="col-md-7 px-3 order-md-1 order-2">
           <BigCard />
           <Link
@@ -68,9 +68,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        
       </div>
-      <div className="row d-flex justify-content-center" data-aos="zoom-in">
-        <div className="d-flex flex-row col-md-11 card bg-secondary">
+      <div className="row d-flex justify-content-center" >
+        <div className="d-flex flex-row col-lg-11 card bg-secondary">
           <div className="col-md-3 card-container shadow m-2">
             <p className="h3 text-white m-1 ">၈၆၀၀</p>
             <p className="text-muted">ငှက်အမျိုးပေါင်း(မျိုးစိတ်ပေါင်း)</p>
